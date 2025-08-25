@@ -1,0 +1,290 @@
+:root {
+    --color-1: #0b0323;
+    --color-2: #113F67;
+    --color-3: #45885b;
+    --color-4: #6A9AB0;
+    --color-5: #FFE3A9;
+    --color-6: #022e42;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-user-drag: none;
+    font-family: 'Poppins';
+}
+
+body {
+
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),
+        url("/png/bg.png") center/cover no-repeat;
+
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #001F3F;
+    box-shadow: 0 0 3px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+header h1 {
+    display: none;
+}
+
+header .ref {
+    display: none;
+}
+
+nav a {
+    color: var(--color-4);
+    text-decoration: none;
+    transition: all ease .2s;
+
+}
+
+nav a:hover {
+    color: #bde4f6;
+    transform: translateY(-1px);
+}
+
+
+nav {
+    display: flex;
+    height: 100%;
+    gap: 100px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+section img {
+    max-width: 250px;
+    border-radius: 50%;
+    margin-top: -50px;
+    border: 3px solid var(--color-5);
+    transition: all 2s;
+    box-shadow: 0 0 10px .6px;
+
+}
+
+section img:hover {
+    transform: scale(1.02);
+}
+
+
+section p {
+    margin-top: 30px;
+    text-align: center;
+    max-width: 500px;
+    color: var(--color-5);
+}
+
+section h1 {
+    margin-top: 20px;
+    color: var(--color-4);
+}
+
+.botones {
+    margin-top: 50px;
+}
+
+.btn {
+    padding: 10px 30px;
+    border: 1px solid #FFF4A4;
+    font-weight: bold;
+    color: var(--color-5);
+    border-radius: 10px;
+    margin: 30px;
+    background-color: var(--color-6);
+    transition: all ease .2s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.583);
+}
+
+.btn:hover {
+    transform: scale(1.08);
+    border: 1px solid #FFF4A4;
+    cursor: pointer;
+    color: #6A9AB0;
+}
+
+
+.toggle,
+.untoggle {
+    display: none;
+
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 20px;
+    gap: 60px;
+    animation: animacion 2s infinite alternate;
+
+}
+
+.wrapper i {
+    transition: all 0.4s ease-in-out;
+}
+
+.wrapper i:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+
+}
+
+@keyframes animacion {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateY(10px);
+
+    }
+
+}
+
+
+@media(max-width: 676px) {
+
+    body {
+        min-height: 120vh;
+
+    }
+
+    header {
+        justify-content: space-between;
+        max-height: 43px;
+    }
+
+    header .ref {
+        display: block;
+        max-width: 30px;
+        transition: all ease .2s;
+    }
+
+    header .ref:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+    }
+
+    .botones {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn {
+        margin: 10px;
+    }
+
+    section {
+        margin-top: 70px;
+    }
+
+    section h1 {
+        max-width: 240px;
+        text-align: center;
+    }
+
+    .toggle {
+        display: block;
+        border: none;
+        cursor: pointer;
+        background: transparent;
+        transition: all ease .2s;
+        filter: drop-shadow(0px 0px 5px #0000009d);
+        margin-top: 6px;
+
+    }
+
+    .toggle img {
+        max-width: 30px;
+    }
+
+    .toggle:hover {
+        transform: scale(1.05);
+
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .untoggle {
+        display: block;
+        border: 0;
+        font-size: 20px;
+        cursor: pointer;
+        background: transparent;
+        transition: all ease .2s;
+        filter: drop-shadow(0px 0px 10px #33260c);
+    }
+
+    .untoggle:hover {
+        transform: scale(1.05);
+    }
+
+    nav {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    nav {
+        transition: ease-in-out .5s;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        gap: 60px;
+        top: 0;
+        right: 0;
+        align-items: center;
+        text-align: center;
+        background-color: #FFCB61;
+        padding: 40px;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5)
+       
+    }
+
+    nav.visible {
+        opacity: 1;
+        visibility: visible;
+        transition: ease-in-out .5s;
+        z-index: 2;
+    }
+
+    .wrapper {
+        display: grid;
+        place-items: center;
+        grid-template-columns: repeat(3, 1fr);       
+        gap: 5vw;
+        animation: animacion 2s infinite alternate;
+        z-index: 1;
+    }
+
+    section img{
+        pointer-events: none;
+    }
+
+
+
+}
