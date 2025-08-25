@@ -155,7 +155,7 @@ section h1 {
 }
 
 .contacts img {
-    max-width: 80px;
+    max-width: 60px;
     transition: all .3s ease-in-out;
 }
 
@@ -200,6 +200,7 @@ section h1 {
     .botones {
         display: flex;
         flex-direction: column;
+        
     }
 
     .btn {
@@ -291,7 +292,7 @@ section h1 {
     grid-template-columns: repeat(2, 1fr);   
     gap: 20px;
     padding: 30px;
-    margin-top: 40px;
+    margin-top: 30px;
     position: relative;
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(2px) saturate(180%);
@@ -303,7 +304,7 @@ section h1 {
     }
 
     .contacts img {
-        max-width: 80px;
+        max-width: 50px;
         transition: all .3s ease-in-out;
     }
 

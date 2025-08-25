@@ -200,7 +200,8 @@ section h1 {
 
     .botones {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+       
     }
 
     .btn {

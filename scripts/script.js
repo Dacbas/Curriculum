@@ -5,13 +5,11 @@ const restart = document.getElementById("rest")
 const body = document.body;
 
 abrir.addEventListener("click", () =>{
-    nav.classList.add("visible");    
-   
+    nav.classList.add("visible");
 })
 
 cerrar.addEventListener("click", () =>{
     nav.classList.remove("visible");  
- 
 })
 
 function refresh(){
@@ -19,6 +17,6 @@ function refresh(){
 }
 
 function download(){
-      this.filePath = "/project 3/cv/CV.pdf";
+      this.filePath = "/cv/CV.pdf";
       document.location.href = this.filePath;
 }
