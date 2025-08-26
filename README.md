@@ -1,3 +1,5 @@
+https://dacbas.github.io/curriculum/pages/
+
 📌 Descripción:
 Este proyecto corresponde a una página web desarrollada como práctica académica. Incluye distintas secciones que permiten mostrar información, servicios y contacto, organizadas de manera clara mediante HTML, CSS y JavaScript.
 
