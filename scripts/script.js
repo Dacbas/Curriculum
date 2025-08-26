@@ -17,6 +17,6 @@ function refresh(){
 }
 
 function download(){
-      this.filePath = "/cv/CV.pdf";
+      this.filePath = "../cv/CV.pdf";
       document.location.href = this.filePath;
 }
