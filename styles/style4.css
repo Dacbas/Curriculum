@@ -113,6 +113,10 @@ section h1 {
     color: var(--color-4);
 }
 
+section h3{
+    color: var(--color-5);
+}
+
 .botones {
     margin-top: 50px;
 }
