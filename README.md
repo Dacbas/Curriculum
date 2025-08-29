@@ -29,9 +29,11 @@ JavaScript → Funcionalidades y dinamismo.
 Recursos gráficos → Imágenes en .png y .svg.
 
 🚀 Cómo visualizar el proyecto:
-Descargar o descomprimir la carpeta web/.
-Abrir el archivo index.html ubicado en la carpeta pages/.
-Navegar entre las secciones:
+
+Usar Github pages: https://dacbas.github.io/curriculum/pages/
+
+Descargar o descomprimir la carpeta web/. Abrir el archivo index.html ubicado en la carpeta pages/. Navegar entre las secciones:
+
 Inicio
 
 Servicios
